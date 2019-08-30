@@ -16,8 +16,7 @@ RUN set -eux; \
 
 WORKDIR /uptimerobot
 
-CMD mv provider/terraform-provider-uptimerobot terraform-provider-uptimerobot && \
-  terraform init && \
+CMD terraform init && \
 	TF_VAR_api_key=$API_KEY terraform validate && \
 	TF_VAR_api_key=$API_KEY terraform plan && \
 	TF_VAR_api_key=$API_KEY terraform apply -auto-approve -parallelism=1
