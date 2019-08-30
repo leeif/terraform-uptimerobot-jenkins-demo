@@ -13,7 +13,7 @@ resource "uptimerobot_monitor" "test_monitor_1" {
 resource "uptimerobot_monitor" "test_monitor_2" {
   friendly_name = "Test Monitor"
   type          = "http"
-  url           = "http://test2.com/2"
+  url           = "http://test.com/2"
   interval      = 300
   alert_contact = [
     {

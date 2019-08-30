@@ -1,1 +1,3 @@
 .terraform
+terraform-provider-uptimerobot
+terraform.tfstate*
